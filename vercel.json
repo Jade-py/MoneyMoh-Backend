@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "TelegramAI/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "TelegramAI/wsgi.py"
+    }
+  ]
+}
